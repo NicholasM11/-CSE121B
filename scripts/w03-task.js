@@ -62,7 +62,7 @@ document.getElementById("getTotalDue").addEventListener("click", function () {
   let membershipChecked = document.getElementById("member").checked;
 
   if (membershipChecked) {
-    subtotal *= 0.8; // Apply 20% discount
+    subtotal *= 0.8; // Apply 20% discount if is member 
   }
 
   let total = subtotal.toFixed(2);
