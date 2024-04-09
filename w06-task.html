@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="./styles/w06-task.css" />
+  </head>
+
+  <body class="z-20">
+    <div class="w-screen h-screen absolute bg-gray-800/30 z-10" />
+
+    <header class="flex w-full items-center justify-center mr-6 mt-6 mb-20">
+      <div>
+        <input
+          type="text"
+          name="location"
+          id="location"
+          class="rounded-xl p-1 bg-transparent border-2 border-x-white text-white px-5"
+          value="Salt Lake City "
+          onkeydown="if(event.keyCode == 13) getWeather()"
+        />
+      </div>
+    </header>
+
+    <div id="weatherContainer"></div>
+
+    <!-- <div class="w-full h-96 flex flex-col justify-start items-center">
+      <div class="w-96">
+        <h1 class="text-xl font-semibold text-white">Miami</h1>
+        <div class="w-full flex justify-between items-center">
+          <h1 class="text-8xl text-white font-semibold">79°F</h1>
+          <p class="-rotate-90 font-semibold text-white text-lg">Clouds</p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-52 flex justify-center items-center mt-16">
+      <div
+        class="w-96 h-20 bg-black/50 text-white font-semibold rounded-xl flex justify-evenly items-center"
+      >
+        <div class="flex flex-col justify-center items-center">
+          <h1>79°F</h1>
+          <h2>Feels Like</h2>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <h1>70%</h1>
+          <h2>Humidity</h2>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <h1>79°F</h1>
+          <h2>Feels Like</h2>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+      <div class="mb-4">
+        <label class="block text-grey-darker text-sm font-bold mb-2" for="city">
+          City
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+          id="city"
+          type="text"
+          placeholder="Enter city"
+        />
+      </div>
+      <div class="flex items-center justify-between">
+        <button
+          class="bg-blue-500 hover:bg-blue-dark text-white font-bold py-2 px-4 rounded"
+          onclick="getWeather()"
+        >
+          Get Weather
+        </button>
+      </div>
+      <div id="weatherData" class="mt-6">
+         -->
+  </body>
+  <script src="./scripts/w06-task.js"></script>
+</html>

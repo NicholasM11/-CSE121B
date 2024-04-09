@@ -1,0 +1,21 @@
+body {
+  /* Set the image as the background */
+  background-image: url("https://wallsneedlove.com/cdn/shop/products/m2185_1s_Rocky-mountain-pine-forest-landscape-wall-mural-Mural-Pattern_e988ffc6-edd8-4521-9688-354e0a698018.jpg?v=1614190901");
+
+  /* Center and scale the background image */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+
+  /* Add a shadow overlay */
+  position: relative;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
